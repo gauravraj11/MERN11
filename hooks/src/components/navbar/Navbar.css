@@ -1,0 +1,29 @@
+.navMenu{
+    display: flex;
+    list-style: none;
+    height: 50px;
+    gap: 20px;
+    border: 1.5px solid brown;
+    justify-content: space-around;
+}
+
+li{
+    margin-top: 10px;
+}
+  
+.link {
+    text-decoration: none;
+    color: black; /* Default link color */
+  }
+  
+.link:hover {
+    color: gray; /* Optional: Change color on hover */
+  }
+  
+.active {
+    color: rgb(222, 10, 77); /* Color for the active link */
+    font-weight: bold; /* Optional: Make the active link bold */
+  }
+  
+
+  
