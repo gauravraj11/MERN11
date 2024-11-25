@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, memo } from 'react'
 import './Child.css'
 
-export default function Child2() {
+ function Child2(props) {
   const [count2, setCount] = useState(10);
+
+  console.log("child2............");
 
   function Increment() {
     setCount(count2 + 5)
   }
+
   return (
     <div className='children'>
       <h1>Child2</h1>
@@ -17,3 +20,5 @@ export default function Child2() {
     </div>
   )
 }
+
+export default memo(Child2)
